@@ -1,5 +1,5 @@
 // import { ContactList } from './ContactList/ContactList';
-import { GlobalStyle, Section } from './GlobalStyle';
+
 // import { ContactForm } from './ContactForm/ContactForm';
 // import { Filter } from './Filter/Filter';
 
