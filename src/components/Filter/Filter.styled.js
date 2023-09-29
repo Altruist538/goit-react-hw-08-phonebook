@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 export const Wrapper = styled.div`
   overflow: hidden;
-  width: 300px;
+
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
+  align-content: center;
   flex-wrap: wrap;
-  margin-left: 30px;
+  align-items: center;
+  margin-bottom: 16px;
 `;
 export const FilterInput = styled.input`
   width: 200px;

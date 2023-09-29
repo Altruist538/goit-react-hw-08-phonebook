@@ -5,6 +5,7 @@ import {
   StyledField,
   StyledError,
   Button,
+  Container,
 } from './ContactForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/accountFetch';
@@ -21,7 +22,7 @@ export const ContactForm = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(selectItems);
   return (
-    <>
+    <Container>
       <Formik
         initialValues={{
           name: '',
@@ -59,6 +60,6 @@ export const ContactForm = () => {
           <Button type="submit">Add contact</Button>
         </StyledForm>
       </Formik>
-    </>
+    </Container>
   );
 };

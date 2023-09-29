@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { List, ListItem, Button } from './ContactList.styled';
+import { List, ListItem, Button, Container } from './ContactList.styled';
 import { fetchContacts, deleteContact } from 'redux/accountFetch';
 import { selectVisibleContacts } from 'redux/selectors';
 import { useEffect } from 'react';
@@ -10,7 +10,7 @@ export const ContactList = () => {
   }, [dispatch]);
   const visibleQuizItems = useSelector(selectVisibleContacts);
   return (
-    <>
+    <Container>
       <List>
         {visibleQuizItems.map(contact => (
           <ListItem key={contact.id}>
@@ -21,6 +21,6 @@ export const ContactList = () => {
           </ListItem>
         ))}
       </List>
-    </>
+    </Container>
   );
 };

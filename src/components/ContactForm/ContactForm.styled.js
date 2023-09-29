@@ -9,10 +9,11 @@ export const StyledForm = styled(Form)`
   padding: 10px;
   width: 400px;
   flex-wrap: wrap;
-  align-items: baseline;
   border: 1px solid #5d9969;
   border-radius: 4px;
   font-weight: bold;
+  align-content: center;
+  align-items: center;
 `;
 
 export const StyledField = styled(Field)`
@@ -31,4 +32,10 @@ export const Button = styled.button`
   border-radius: 4px;
   cursor: pointer;
   }
+`;
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
 `;

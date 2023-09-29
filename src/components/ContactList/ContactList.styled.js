@@ -15,3 +15,9 @@ export const Button = styled.button`
   cursor: pointer;
   }
 `;
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+`;
