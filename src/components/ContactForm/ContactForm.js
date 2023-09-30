@@ -8,8 +8,8 @@ import {
   Container,
 } from './ContactForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/accountFetch';
-import { selectItems } from 'redux/selectors';
+import { addContact } from 'redux/contacts/accountFetch';
+import { selectItems } from 'redux/contacts/selectors';
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().min(2).max(50).required('* Name is required'),
@@ -30,7 +30,7 @@ export const ContactForm = () => {
         }}
         validationSchema={validationSchema}
         onSubmit={(values, actions) => {
-          const isContactExists = contacts.find(
+          let isContactExists = contacts.find(
             contact =>
               contact.name.toLowerCase() === values.name.toLowerCase() ||
               contact.number === values.number
