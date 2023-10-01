@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
 export const Section = styled.div`
   padding: 10px;
   margin-left: 40px;

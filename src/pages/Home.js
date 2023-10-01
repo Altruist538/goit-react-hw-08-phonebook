@@ -1,21 +1,11 @@
-const styles = {
-  container: {
-    minHeight: 'calc(40vh - 50px)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontWeight: 500,
-    fontSize: 48,
-    textAlign: 'center',
-  },
-};
+import ImgBook from '../components/imgDat/phones.png';
+import { Container, Title } from './pages.styled';
 
 export default function Home() {
   return (
-    <div style={styles.container}>
-      <h1 style={styles.title}>Phone book welcome page</h1>
-    </div>
+    <Container>
+      <Title>Phone book welcome page</Title>
+      <img src={ImgBook} alt="Phone book" style={{ objectFit: 'cover ' }} />
+    </Container>
   );
 }

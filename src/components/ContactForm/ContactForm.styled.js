@@ -22,20 +22,17 @@ export const StyledField = styled(Field)`
   flex-wrap: wrap;
   flex-direction: column;
   align-content: flex-start;
+  border-radius: 4px;
 `;
 
 export const StyledError = styled(ErrorMessage)`
   color: red;
 `;
-export const Button = styled.button`
-  border: 1px solid #5d9969;
-  border-radius: 4px;
-  cursor: pointer;
-  }
-`;
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 `;

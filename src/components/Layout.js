@@ -1,15 +1,12 @@
 import { Outlet } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
-import { AppBar } from './AppBar/AppBar';
+import { AppBarComp } from './AppBar/AppBar';
 import { Suspense } from 'react';
-// import { ContactForm } from './ContactForm/ContactForm';
 
 export const Layout = () => {
   return (
     <div style={{ maxWidth: 960, margin: '0 auto', padding: '0 16px' }}>
-      {/* <h2>Header</h2> */}
-      {/* <ContactForm /> */}
-      <AppBar />
+      <AppBarComp />
       <Suspense fallback={null}>
         <Outlet />
       </Suspense>

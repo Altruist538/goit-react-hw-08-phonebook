@@ -4,12 +4,12 @@ import {
   StyledForm,
   StyledField,
   StyledError,
-  Button,
   Container,
 } from './ContactForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contacts/accountFetch';
 import { selectItems } from 'redux/contacts/selectors';
+import Button from '@mui/material/Button';
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().min(2).max(50).required('* Name is required'),
@@ -56,8 +56,9 @@ export const ContactForm = () => {
             <StyledField type="number" name="number" placeholder="xxx-xx-xx" />
             <StyledError name="number" component="div" />
           </label>
-
-          <Button type="submit">Add contact</Button>
+          <Button type="submit" variant="contained">
+            Add contact
+          </Button>
         </StyledForm>
       </Formik>
     </Container>
